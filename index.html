@@ -23,7 +23,7 @@
 <body>
 
     <!-- NAVBAR-->
-    <nav class="navbar">
+    <nav class="navbar sticky-top">
         <a class="navbar-a" href="#likedpromotion">โปรโมชั่นที่คุณถูกใจ</a>
         <a class="navbar-a" href="#allarticle">หมวดหมู่บทความทั้งหมด</a>
         <a class="navbar-a" href="#lastarticle">บทความที่อัพเดทล่าสุด</a>
@@ -31,6 +31,8 @@
     </nav>
     <!--End Navbar-->
     <!--Personal information-->
+
+
     <div class="container-fulid">
         <div class="row">
             <div class="col-sm-3">
@@ -423,6 +425,22 @@
         </div>
     </div>
 
+    <script>
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
 
 </html>

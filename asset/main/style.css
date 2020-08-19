@@ -162,34 +162,25 @@ body {
     color: #FFFFFF;
 }
 
-@media only screen and (max-width: 600px) {
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+
+@media only screen and (min-width: 300px) {
     .navbar {
-        background-color: orange;
-        padding: 5px;
-        font-family: 'Prompt', sans-serif;
-        text-align: center;
-        width: 375px;
-        margin-left: auto;
-        margin-right: auto;
-        border-bottom: 10px;
-        border-radius: 0px 0px 10px 10px;
-        -webkit-border-radius: 0px 0px 10px 10px;
-        -moz-border-radius: 0px 0px 10px 10px;
-        -ms-border-radius: 0px 0px 10px 10px;
-        -o-border-radius: 0px 0px 10px 10px;
-        box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.20);
-        text-align: center;
+        position: sticky;
     }
     .navbar-a {
-        float: left;
+        float: inline-start;
         display: block;
         color: #ffffff;
+        background-color: orange;
         text-align: center;
-        padding: 2px 2px;
-        text-decoration: none;
+        padding: 5px 5px;
+        text-decoration: wavy;
         font-style: normal;
-        font-size: 12px;
-        line-height: 2px;
+        font-size: 15px;
+        line-height: 5px;
+        margin: 4px;
     }
     .navbar-a:hover {
         font-family: 'Prompt', sans-serif;
@@ -198,12 +189,19 @@ body {
         line-height: 2px;
         color: #FFFFFF;
         text-align: center;
+        background-color: black;
+        border: 2px;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
     }
     .navbar-a:link {
         font-family: 'Prompt', sans-serif;
         font-style: normal;
-        font-size: 12px;
-        line-height: 2px;
+        font-size: 15px;
+        line-height: 5px;
         color: #FFFFFF;
         text-align: center;
     }
